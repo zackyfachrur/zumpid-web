@@ -28,7 +28,7 @@
             <!-- about wrapper -->
             <div class="about">
                 <div class="about-img-holder">
-                    <img src="assets/imgs/progam.png" class="about-img" alt="">
+                    <img src="assets/imgs/success_image.jpg" class="about-img" alt="">
                 </div>
                 <div class="about-caption">
                     <p class="section-subtitle">Thank you for submitting! </p>
