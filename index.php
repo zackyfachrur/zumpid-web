@@ -67,7 +67,7 @@
             <p class="header-subtitle" data-aos="fade-left"><?php echo "Website Development Services" ?></p>
 
             <button class="btn btn-primary" style="font-family: 'Baloo Paaji', cursive;" data-aos="fade-right">
-            <a href="https://wa.me/6287703577988?text=Hello Zumpid" target="_blank"><?php echo "Contact Us" ?></a></button>
+            <a href="https://wa.me/#?text=Hello Zumpid" target="_blank"><?php echo "Contact Us" ?></a></button>
         </div>
     </header><!-- end of page header -->
 
@@ -197,7 +197,7 @@
                     <?php echo "Our Web Design" ?></p>
                 </div>
                 <div class="col-sm offset-sm-2 offset-md-3">
-                    <button class="btn my-font btn-primary" data-aos="fade-left"> <a href="https://wa.me/6287703577988?text=Hello Zumpid" target="_blank">
+                    <button class="btn my-font btn-primary" data-aos="fade-left"> <a href="https://wa.me/#?text=Hello Zumpid" target="_blank">
                     <?php echo "Message" ?> </a> </button>
                 </div>
             </div> <!-- end of row -->
@@ -303,20 +303,16 @@
 
     <!-- Preloader -->
     <div class="preloader">
-        <!-- Add your loading animation or image here -->
         <div class="spinner"></div>
     </div>
     </div>
 
     <!-- preloader -->
     <script>
-        window.addEventListener('load', function() {
-            // Get the preloader element
             const preloader = document.querySelector('.preloader');
-            // Get the content element
+
             const content = document.querySelector('.content');
 
-            // Hide the preloader and show the content
             preloader.style.display = 'none';
             content.classList.remove('hidden');
             AOS.init();
