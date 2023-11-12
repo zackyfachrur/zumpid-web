@@ -1,4 +1,4 @@
-### ✨ Configuration
+### 🙏🏽 Configuration
 #### Replace the HTML :
 ```html
 <a href="https://wa.me/(Your Number)?text=Hello Zumpid" target="_blank"></a>
