@@ -15,33 +15,26 @@ require_once "assets/vendors/phpmailer/src/SMTP.php";
 		$comment = $_POST['comment'];
 
 	$mail = new PHPMailer;
- 
-	//Enable SMTP debugging. 
-	$mail->SMTPDebug = 0;                               
-	//Set PHPMailer to use SMTP.
-	$mail->isSMTP();            
-	//Set SMTP host name                          
-	$mail->Host = "tls://smtp.gmail.com"; //host mail server
-	//Set this to true if SMTP host requires authentication to send email
-	$mail->SMTPAuth = true;                          
-	//Provide username and password     
-	$mail->Username = "mochzackyaja@gmail.com";   //nama-email smtp          
-	$mail->Password = "fsmefbouqmjsedeg	";           //password email smtp
-	//If SMTP requires TLS encryption then set it
-	$mail->SMTPSecure = "tls";                           
-	//Set TCP port to connect to 
+
+	$mail->SMTPDebug = 0;
+	$mail->isSMTP();                     
+	$mail->Host = "tls://smtp.gmail.com"; 
+	$mail->SMTPAuth = true;                             
+	$mail->Username = "Your Email";        
+	$mail->Password = "Your Password";
+	$mail->SMTPSecure = "tls";
 	$mail->Port = 587;                                   
  
-	$mail->From = "from@gmail.com"; //email pengirim
-	$mail->FromName = "Pelanggan"; //nama pengirim
+	$mail->From = "from@gmail.com";
+	$mail->FromName = "Pelanggan";
  
-	 $mail->addAddress($_POST['email'], $_POST['name']); //email penerima
+	 $mail->addAddress($_POST['email'], $_POST['name']);
  
 	$mail->isHTML(true);
  
 	$mail->Subject = $_POST['subject'];
-    $mail->Body    = $_POST['comment']; //isi email
-        $mail->AltBody = "Pelanggan"; //body email (optional)
+    $mail->Body    = $_POST['comment'];
+        $mail->AltBody = "Pelanggan";
  
 	if(!$mail->send()) 
 	{
