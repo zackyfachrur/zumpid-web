@@ -33,7 +33,7 @@ require_once "assets/vendors/phpmailer/src/SMTP.php";
 	$mail->isHTML(true);
  
 	$mail->Subject = $_POST['subject'];
-    $mail->Body    = $_POST['comment'];
+   	$mail->Body    = $_POST['comment'];
         $mail->AltBody = "Pelanggan";
  
 	if(!$mail->send()) 
