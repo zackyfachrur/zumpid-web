@@ -1,9 +1,11 @@
 #### ✨ Configuration
 Replace the HTML :
+https://github.com/zahsey/webPortfolio/blob/master/index.php
 ```html
 <a href="https://wa.me/(Your Number)?text=Hello Zumpid" target="_blank"></a>
 ```
 Replace the PHP Code :
+https://github.com/zahsey/webPortfolio/edit/master/send.php
 ```php
 $mail->SMTPDebug = 0;
 $mail->isSMTP();
